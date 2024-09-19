@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode</title> 
+    
+    <style>
+        /* General body styling */
+        body {
+            padding: 0% 3% 10% 3%;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+
+        /* Header styling */
+        h1 {
+            color: #0a7ac0;
+            margin-top: 30px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            transition: color 0.5s ease;
+        }
+
+        /* Paragraph styling */
+        p {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        /* Styling for TECHNOLOGY BUSINESS INCUBATOR */
+        p i span {
+            font-weight: bold;
+            transition: color 0.5s ease;
+        }
+
+        .technology {
+            color: #ff5733; /* Red */
+        }
+
+        .business {
+            color: #3498db; /* Blue */
+        }
+
+        .incubator {
+            color: #28a745; /* Green */
+        }
+
+        /* Subheading styling */
+        h3 {
+            margin-top: 20px;
+            font-size: 1.8em;
+            color: #555;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+            transition: color 0.5s ease;
+        }
+
+        /* Hover effect on headings */
+        h1:hover, h3:hover {
+            color: #42b983;
+            cursor: pointer;
+        }
+
+        /* Button styling */
+        button {
+            cursor: pointer;
+            border: 2px solid #555;
+            background-color: #f0f0f0;
+            color: #555;
+            text-align: center;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            margin-top: 20px;
+            border-radius: 50px;
+            transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Button hover and active state effects */
+        button:hover {
+            background-color: #0a7ac0;
+            color: white;
+            border-color: #0a7ac0;
+            transform: scale(1.05); /* Button grows slightly on hover */
+        }
+
+        button:active {
+            background-color: #42b983;
+            box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+            transform: scale(0.98); /* Shrink the button slightly when clicked */
+        }
+
+        /* Dark mode styling */
+        .dark {
+            background-color: #222;
+            color: #e6e6e6;
+        }
+
+        .dark h1 {
+            color: #42b983;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .dark h3 {
+            color: #ccc;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        .dark button {
+            background-color: #333;
+            color: #e6e6e6;
+            border-color: #777;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .dark button:hover {
+            background-color: #42b983;
+            color: #222;
+            border-color: #42b983;
+        }
+
+        .dark button:active {
+            background-color: #0a7ac0;
+            transform: scale(0.98);
+            box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Dark mode colored text */
+        .dark .technology {
+            color: #ff8b73;
+        }
+
+        .dark .business {
+            color: #6ec9ff;
+        }
+
+        .dark .incubator {
+            color: #7dd68a;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to TBI</h1>
+    <p><i>
+        <span class="technology">TECHNOLOGY</span> 
+        <span class="business">BUSINESS</span> 
+        <span class="incubator">INCUBATOR</span>
+    </i></p>
+
+    <h3>Light and Dark Mode</h3>
+    <button onclick="myFunction()">Switch mode</button> 
+    
+    <script>
+        function myFunction() {
+            let element = document.body;
+            element.classList.toggle("dark");
+        }
+    </script>
+</body>
+</html>
